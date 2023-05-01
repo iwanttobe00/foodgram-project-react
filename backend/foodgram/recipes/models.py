@@ -1,8 +1,7 @@
 from colorfield.fields import ColorField
 from django.contrib.auth import get_user_model
 from django.core.validators import (
-    MaxValueValidator, MinValueValidator,
-    RegexValidator
+    MaxValueValidator, MinValueValidator, RegexValidator
 )
 from django.db import models
 from django.db.models import UniqueConstraint
@@ -103,7 +102,7 @@ class Recipe(models.Model):
             1, message='Время приготовления не менее 1 минуты!'
         ),
             MaxValueValidator(
-        1440, message='Время приготовления не более 24 часов!'
+                1440, message='Время приготовления не более 24 часов!'
             )
         ]
     )
