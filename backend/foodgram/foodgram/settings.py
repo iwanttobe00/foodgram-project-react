@@ -77,19 +77,19 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 
+        'NAME':
         'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 
+        'NAME':
         'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 
+        'NAME':
         'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 
+        'NAME':
         'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
@@ -102,7 +102,7 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
     ],
-    'DEFAULT_PAGINATION_CLASS': 
+    'DEFAULT_PAGINATION_CLASS':
         'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 6,
 }

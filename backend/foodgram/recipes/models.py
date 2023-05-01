@@ -1,5 +1,5 @@
-from django.contrib.auth import get_user_model
 from colorfield.fields import ColorField
+from django.contrib.auth import get_user_model
 from django.core.validators import (
     MaxValueValidator, MinValueValidator,
     RegexValidator
@@ -101,7 +101,7 @@ class Recipe(models.Model):
         verbose_name='Время готовки',
         validators=[MinValueValidator(
             1, message='Время приготовления не менее 1 минуты!'
-        ),  
+        ),
             MaxValueValidator(
         1440, message='Время приготовления не более 24 часов!'
             )
