@@ -25,7 +25,7 @@ class RecipeAdmin(admin.ModelAdmin):
 
     def get_favorites(self, obj):
         return obj.favorites.count()
-    
+
     get_favorites.short_description = 'Избранное'
 
     def get_ingredients(self, obj):
@@ -36,7 +36,7 @@ class RecipeAdmin(admin.ModelAdmin):
                 'ingredient__name',
                 'amount', 'ingredient__measurement_unit')]
         )
-    
+
     get_ingredients.short_description = 'Ингридиенты'
 
 
